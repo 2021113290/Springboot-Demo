@@ -1,0 +1,45 @@
+
+server:
+  port: 8888
+
+mytest2: 房子
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/testdb?characterEncoding=utf8
+    username: root
+    password: 123456
+
+# 字符串配置
+
+myString: 你\n好
+myString1: '你\n好'
+myString2: "你\n好"
+myString3: "你\\n好"
+
+#自定义对象配置
+student:
+  id: 1
+  name: 小k
+  age: 18
+
+#student: {id: 1,name: xiao,age: 18}
+
+#列表配置
+dbtypes:
+  name:
+    - mysql
+    - sqlserver
+    - db2
+
+#日志级别设置
+logging:
+  file:
+    name: D:\\javaee\\code\\logs\\spring1-19.log
+  #    path: D:\\javaee\\code\\logs
+  level:
+    com:
+      example:
+        springbootdemo:
+          controller:
+            info
